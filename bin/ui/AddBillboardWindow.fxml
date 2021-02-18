@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="344.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="117.0" layoutY="35.0" text="Add billboard">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="88.0" text="Width">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="65.0" layoutY="132.0" text="Height">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="177.0" text="Brand">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="67.0" layoutY="220.0" text="In use">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtWidth" layoutX="124.0" layoutY="85.0" />
+      <TextField fx:id="txtHeight" layoutX="124.0" layoutY="129.0" />
+      <RadioButton fx:id="used" layoutX="125.0" layoutY="221.0" mnemonicParsing="false" selected="true" text="Yes">
+         <toggleGroup>
+            <ToggleGroup fx:id="use" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="notUsed" layoutX="126.0" layoutY="247.0" mnemonicParsing="false" text="No" toggleGroup="$use" />
+      <TextField fx:id="txtBrand" layoutX="124.0" layoutY="174.0" />
+      <Button layoutX="209.0" layoutY="276.0" mnemonicParsing="false" onAction="#addBillboard" prefHeight="25.0" prefWidth="50.0" style="-fx-background-color: #33CEFF;" text="Add" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
